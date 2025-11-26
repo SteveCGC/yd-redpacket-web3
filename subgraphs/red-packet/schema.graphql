@@ -1,0 +1,34 @@
+type PacketSent @entity(immutable: true) {
+  id: ID!
+  sender: Bytes!
+  amount: BigInt!
+  count: BigInt!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  txHash: Bytes!
+}
+
+type GrabSuccess @entity(immutable: true) {
+  id: ID!
+  user: Bytes!
+  amount: BigInt!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  txHash: Bytes!
+}
+
+type GrabFailed @entity(immutable: true) {
+  id: ID!
+  user: Bytes!
+  reason: String!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  txHash: Bytes!
+}
+
+type PacketFinished @entity(immutable: true) {
+  id: ID!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  txHash: Bytes!
+}
