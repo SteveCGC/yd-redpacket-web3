@@ -1,0 +1,6 @@
+type Message @entity(immutable: true) {
+  id: ID!
+  sender: Bytes!
+  message: String!
+  timestamp: BigInt!
+}
