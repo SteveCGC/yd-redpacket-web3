@@ -42,17 +42,17 @@ contract RedPacket {
 
     function grab() external nonReentrant {
         if (packet.remaining == 0) {
-            emit GrabFailed(msg.sender, "红包已抢完");
+            emit GrabFailed(msg.sender, unicode"红包已抢完");
             return;
         }
 
         if (lastClaimedRound[msg.sender] == currentRound) {
-            emit GrabFailed(msg.sender, "已经抢过");
+            emit GrabFailed(msg.sender, unicode"已经抢过");
             return;
         }
 
         if (amountLeft == 0) {
-            emit GrabFailed(msg.sender, "金额已分配完");
+            emit GrabFailed(msg.sender, unicode"金额已分配完");
             return;
         }
 

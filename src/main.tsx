@@ -8,8 +8,7 @@ import App from './App';
 import './index.css';
 import { wagmiConfig } from './walletConfig';
 
-const queryClient = new QueryClient();
-
+const queryClient = new QueryClient()
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <WagmiProvider config={wagmiConfig}>
