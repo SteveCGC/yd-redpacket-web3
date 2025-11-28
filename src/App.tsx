@@ -56,7 +56,6 @@ function Header({
           </div>
           <div>
             <p className="text-lg font-semibold">链上数据 & 红包实验室</p>
-            <p className="text-xs text-slate-400">红包 H5：/redpacket（Tab 切换发/抢）</p>
           </div>
         </div>
         <div className="flex items-center gap-3">
@@ -107,9 +106,6 @@ function Home({
             <h1 className="text-3xl md:text-4xl font-bold leading-tight">
               数据上链对比 + 链上红包 <span className="text-fuchsia-400">H5 红包页</span>
             </h1>
-            <p className="text-slate-300 text-lg leading-relaxed">
-              周日红包作业抽成单独 H5 路由 /redpacket，Tab 切换“发红包 / 抢红包”，手机端体验更佳。保留周六上链作业。
-            </p>
             <div className="flex flex-wrap gap-3">
               <Badge label="Ethers.js" />
               <Badge label="RainbowKit" />
@@ -129,18 +125,6 @@ function Home({
               >
                 进入抢红包（/redpacket）
               </button>
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-orange-500/20 to-slate-900 px-5 py-6 shadow-xl shadow-orange-500/10">
-              <p className="text-sm text-slate-100">H5 路由：/redpacket</p>
-              <p className="mt-2 text-xl font-semibold">发红包表单</p>
-              <p className="mt-1 text-sm text-slate-200/80">金额 + 个数，移动端样式，交易确认提示</p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-fuchsia-600/20 to-slate-900 px-5 py-6 shadow-xl shadow-fuchsia-500/10">
-              <p className="text-sm text-slate-100">H5 路由：/redpacket</p>
-              <p className="mt-2 text-xl font-semibold">抢红包 + 事件回显</p>
-              <p className="mt-1 text-sm text-slate-200/80">实时监听 + Graph 数据流</p>
             </div>
           </div>
         </div>

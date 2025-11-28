@@ -273,7 +273,6 @@ export default function SundaySection() {
                 <Sparkle className="h-4 w-4 text-orange-200" />
                 <p className="font-semibold">发红包</p>
               </div>
-              <p className="text-xs text-slate-400 break-all text-right">合约：{contractAddress ?? '未配置'}</p>
             </div>
             <div className="grid gap-3 md:grid-cols-2">
               <label className="block text-sm text-slate-300">
@@ -339,7 +338,6 @@ export default function SundaySection() {
               <Trophy className="h-4 w-4 text-amber-200" />
               <p className="font-semibold">抢红包记录</p>
             </div>
-            <p className="text-xs text-slate-400 break-all text-right">Graph: {graphEndpoint ?? '未配置'}</p>
           </div>
           {graphError && <p className="text-sm text-rose-300">{graphError}</p>}
           <div className="max-h-[420px] overflow-auto space-y-2">

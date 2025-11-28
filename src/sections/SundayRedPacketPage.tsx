@@ -190,6 +190,7 @@ export default function SundayRedPacketPage({ onBack }: Props) {
                 id
                 user
                 amount
+                blockNumber
                 blockTimestamp
               }
             }`
@@ -245,7 +246,6 @@ export default function SundayRedPacketPage({ onBack }: Props) {
             </div>
             <div className="leading-tight">
               <p className="text-xl font-bold text-[#fffbf4]">链上红包（周日作业）</p>
-              <p className="text-xs text-[#ffe2d9]">发 / 抢 红包 · Tab 切换 · 手机端优先</p>
             </div>
           </div>
           <p className="text-sm text-[#ffede1] break-all">合约：{contractAddress ?? '未配置 VITE_REDPACKET_CONTRACT'}</p>
@@ -278,7 +278,6 @@ export default function SundayRedPacketPage({ onBack }: Props) {
                   <Sparkle className="h-4 w-4 text-amber-200" />
                   <p className="font-semibold">发红包</p>
                 </div>
-                <span className="text-xs text-[#ffbaa6] break-all">浏览器：{explorerBase}</span>
               </div>
               <label className="block text-sm text-[#ffe2d9]">
                 总金额（ETH）
@@ -370,7 +369,6 @@ export default function SundayRedPacketPage({ onBack }: Props) {
                 {isGrabbing ? '抢红包中...' : grabbed ? '已经抢过啦' : '立即抢红包'}
               </button>
               {isGrabConfirming && <p className="text-xs text-[#ffd3c5]">等待确认...</p>}
-              <p className="text-xs text-[#ffbaa6]">区块浏览器：{explorerBase}</p>
             </div>
 
             <div className="rounded-2xl border border-[#ffdfc1]/30 bg-[#1b0b0b] p-4 shadow-lg shadow-black/30 space-y-3">

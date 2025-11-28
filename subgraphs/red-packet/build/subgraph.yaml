@@ -7,9 +7,9 @@ dataSources:
     name: RedPacket
     network: sepolia
     source:
-      address: "0x0000000000000000000000000000000000000000"
+      address: "0x374E5b7662eae9181F8451506B62fdFa713B5B69"
       abi: RedPacket
-      startBlock: 0
+      startBlock: 9721740
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
